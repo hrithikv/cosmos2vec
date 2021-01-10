@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <h1> </h1>
+        <form action="/" method="POST">
+            <p>Enter sentence to check: <input type="text" value="" placeholder="" name="sent"></p>
+            <p><input type="submit" value="check"></p>
+        {% if result == 1%}
+        <p>Yes</p>
+        {%elif result == 0%}
+        <p>No</p>
+        {%else%}
+        <p>Error</p>
+        {%endif%}
+        </form>
+    </body>
+</html>
